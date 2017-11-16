@@ -1,0 +1,19 @@
+
+<div>
+  <form (submit) = 'onSubmit()' name='formData' #formData="ngForm">
+    Note: <input type="text" name='text' required minlength="3" [(ngModel)]='note.text'><br>
+    <input [disabled]='!formData.valid' type="submit" value='Add Note'>
+  </form>
+</div>
+
+<!-- <button (click) = 'getAll()'>Grab all notes</button> -->
+<div class = 'scroll_div'>
+  <div class ='note_border' *ngFor='let note of notes.results.reverse() ; let idx = index '>
+    <h5>
+      - {{notes.results[idx].content | json}}<br>
+      Noted On: {{notes.results[idx].date | date: 'medium'}}
+    </h5>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
