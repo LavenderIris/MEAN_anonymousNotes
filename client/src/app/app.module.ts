@@ -7,11 +7,23 @@ import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NoteService } from './note.service';
 import {HttpClientModule} from '@angular/common/http';
+import { ShowAllComponent } from './show-all/show-all.component';
+import { EditComponent } from './edit/edit.component';
+import { LoginComponent } from './login/login.component';
+import { AddComponent } from './add/add.component';
+import { ShowOneComponent } from './show-one/show-one.component';
+import { AnswerComponent } from './answer/answer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    ShowAllComponent,
+    EditComponent,
+    LoginComponent,
+    AddComponent,
+    ShowOneComponent,
+    AnswerComponent
   ],
   imports: [
     BrowserModule,

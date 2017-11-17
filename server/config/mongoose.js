@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var fs = require('fs');
 
-mongoose.connect('mongodb://localhost/setup_demo_db');
+mongoose.connect('mongodb://localhost/belttest_db');
 
 var models_path = __dirname + '/../models';
 
